@@ -26,7 +26,7 @@ function NavBar() {
             <Col xs={2}>
             <p className='text-right'>
                 <a className='link' href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/'><i class="fab fa-linkedin-in"></i></a>
-                <a className='link' href='https://github.com/'><i class="fab fa-github"></i></a>
+                <a className='link' href='https://github.com/alexandreGvozdenovic'><i class="fab fa-github"></i></a>
             </p>
             </Col>
         </Row>
