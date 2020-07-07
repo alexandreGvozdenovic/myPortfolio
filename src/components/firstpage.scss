@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans&display=swap');
+
+// Font Styles
+$mainFont: 'Work Sans', sans-serif;
+$titleFont: 'Abril Fatface', cursive;
+
+// Colors
+$background-charcoal: #2F4550;
+$text-ghost-white : #F4F4F9;
+
+a, a:link, a:visited,a:active {
+  color: $text-ghost-white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(245, 245, 250, 0.75) !important;
+}
+// Blob party here
+
+.main-container-first-page {
+  height: 100vh;
+  background-color: $background-charcoal;
+  background-image: 
+  url('../blobs/Blob-Haut-Droite-Top.svg'),
+  url('../blobs/Blob-Haut-Droite-Bottom.svg'),
+  url('../blobs/Blob-Haut-Gauche-Top.svg'),
+  url('../blobs/Blob-Haut-Gauche-Bottom.svg');
+  background-position: 858px -65px, 799px 18px, -309px 320px, -266px 400px;
+  background-repeat: no-repeat;
+}
+
+.title {
+    padding-top: 284px;
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100%;
+}
+.text-title {
+  font-family: $titleFont;
+  color: $text-ghost-white;
+  font-size: 64px;
+}
+
+.subtitle {
+  margin-top: 32px;
+}
+.text-subtitle {
+  font-family: $mainFont;
+  color: $text-ghost-white;
+  font-size: 24px;
+}
+
+.learn-more {
+    margin-top: 160px;
+}
+.text-learn-more {
+  font-family: $mainFont;
+  color: $text-ghost-white;
+}
+.fa-mouse {
+  padding-left: 8px;
+}
