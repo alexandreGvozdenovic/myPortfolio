@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './secondpage.scss';
 import { Container, Row, Col, Image} from 'react-bootstrap'
 
 
@@ -24,22 +23,22 @@ function SecondPage() {
             <Row className='justify-content-center skills-row'>
             <Col className='d-flex flex-column align-items-center'>
                 <i class="fas fa-laptop-code skill-icon"></i>
-                <h4>Front end</h4>
+                <h4 className='skill-title'>Front end</h4>
                 <p className='text-center skill'>HTML5, CSS3, JavaScript,<br/> React, Redux</p>
             </Col>
             <Col className='d-flex flex-column align-items-center'>
                 <i class="fas fa-server skill-icon"></i>
-                <h4>Back end</h4>
+                <h4 className='skill-title'>Back end</h4>
                 <p className='text-center skill'>Node.JS, Express.JS</p>
             </Col>
             <Col className='d-flex flex-column align-items-center'>
                 <i class="fas fa-database skill-icon"></i>
-                <h4>Base de données</h4>
+                <h4 className='skill-title'>Base de données</h4>
                 <p className='text-center skill'>Mongo DB</p>
             </Col>
             <Col className='d-flex flex-column align-items-center'>
                 <i class="fab fa-github-alt skill-icon"></i>
-                <h4>Workflow</h4>
+                <h4 className='skill-title'>Workflow</h4>
                 <p className='text-center skill'>Git, Github</p>
             </Col>
         </Row>

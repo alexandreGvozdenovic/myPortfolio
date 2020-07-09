@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './navbar.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col,} from 'react-bootstrap'
 
@@ -49,10 +48,10 @@ function NavBar() {
             <Col xs={{span:1, offset: -1}}>
             <p className='text-right'>
                 <a id='Linkedin' className='link' href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/' style={{color: navFontColor}} onMouseOver={ () => mouseover('Linkedin')} onMouseOut={ () => mouseout('Linkedin')}>
-                  <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-linkedin-in nav-icons"></i>
                 </a>
                 <a id='Github' className='link' href='https://github.com/alexandreGvozdenovic' style={{color: navFontColor}} onMouseOver={ () => mouseover('Github')} onMouseOut={ () => mouseout('Github')}>
-                  <i class="fab fa-github"></i>
+                  <i class="fab fa-github nav-icons"></i>
                 </a>
             </p>
             </Col>
