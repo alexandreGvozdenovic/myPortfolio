@@ -9,16 +9,15 @@ $background-charcoal: #2F4550;
 $text-ghost-white : #F4F4F9;
 
 a, a:link, a:visited,a:active {
-    color: $text-ghost-white;
+    // color: $text-ghost-white;
     text-decoration: none;
   }
   a:hover {
-    color: rgba(245, 245, 250, 0.75) !important;
+    // color: rgba(245, 245, 250, 0.75) !important;
   }
 
   .nav {
     font-family: $mainFont;
-    color: $text-ghost-white;
     padding-top: 24px;
 
   }
