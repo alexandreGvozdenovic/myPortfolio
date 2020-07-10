@@ -23,6 +23,7 @@ function NavBar() {
 
   function mouseover(id) {
     document.getElementById(id).style.color = navBackground === white ? 'rgba(47, 69, 80, 0.75)' : 'rgba(245, 245, 250, 0.75)'
+    document.getElementById(id).style.cursor = 'pointer'
   }
   function mouseout(id) { 
     document.getElementById(id).style.color = navFontColor; 
@@ -34,16 +35,27 @@ function NavBar() {
       <Container className='fixed-top' fluid='true'>
         <Row className='nav' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
             <Col xs={{span:2, offset:1}}>
-              <span className='name' onClick={ () => scrollToTop()}>Alexandre Gvozdenovic</span>
+              <span
+                id='name'
+                className='name' 
+                onClick={ () => scrollToTop()}
+                style={{color: navFontColor}}
+                onMouseOver={ () => mouseover('name')} onMouseOut={ () => mouseout('name')}
+              >
+                Alexandre Gvozdenovic
+              </span>
             </Col>
             <Col xs={2}>
               <Link
+                id='about'
                 activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
+                style={{color: navFontColor}}
+                onMouseOver={ () => mouseover('about')} onMouseOut={ () => mouseout('about')}
               >
                 A propos
               </Link>
@@ -51,30 +63,36 @@ function NavBar() {
             </Col>
             <Col xs={2}>
               <Link
+                id='project'
                 activeClass='active'
                 to='project'
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
+                style={{color: navFontColor}}
+                onMouseOver={ () => mouseover('project')} onMouseOut={ () => mouseout('project')}
               >
                 Projets
               </Link>
             </Col>
             <Col xs={2}>
               <Link
+                id='contact'
                 activeClass='active'
                 to='contact'
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
+                style={{color: navFontColor}}
+                onMouseOver={ () => mouseover('contact')} onMouseOut={ () => mouseout('contact')}
               >
                 Contact
               </Link>
             </Col>
             <Col xs={1}>
-            CV
+              CV
             </Col>
             <Col xs={{span:1, offset: -1}}>
             <p className='text-right'>

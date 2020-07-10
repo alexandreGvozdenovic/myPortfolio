@@ -1,11 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Button, Badge} from 'react-bootstrap'
-import ScrollArea from 'react-scrollbar'
-
 
 function ThirdPage() {
-    var currentYear = new Date;
+    var currentYear = new Date();
   return (
     <Container  fluid='true' className='d-flex flex-column main-container-third-page'>
         <Container id='project'>
@@ -95,7 +93,7 @@ function ThirdPage() {
                 <p className='text-center footer-text'>
                     <strong>Besoin d'un développeur fullstack pour votre projet ?</strong><br/>
                     Envoyez un message (ou parlons-en autour d'une <span role="img" aria-label="beer">🍻</span>)<br/>
-                    <Button className='contact-button'>On prend contact</Button>
+                    <Button className='contact-button' variant='light'>On prend contact</Button>
                 </p>
                 <Container className='bottom-footer'>
                     <div className='d-flex justify-content-between'>
