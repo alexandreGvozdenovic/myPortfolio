@@ -13,7 +13,7 @@ function App() {
     <Container fluid='true' className='main-app'>
       <NavBar />
       <FirstPage />
-      <SecondPage />
+      <SecondPage id='section1' />
       <ThirdPage />
     </Container>
   );

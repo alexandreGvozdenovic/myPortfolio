@@ -8,7 +8,7 @@ function ThirdPage() {
     var currentYear = new Date;
   return (
     <Container  fluid='true' className='d-flex flex-column main-container-third-page'>
-        <Container>
+        <Container id='project'>
             <Row>
                 <Col>
                     <h2>Projets</h2>
@@ -89,7 +89,7 @@ function ThirdPage() {
             </Col>
             </Row>
         </Container>
-        <Row className='footer-container'>
+        <Row className='footer-container' id='contact'>
             <Col className='d-flex flex-column justify-content-center'>
                 <h4 className='text-center footer-title'>Contact</h4>
                 <p className='text-center footer-text'>

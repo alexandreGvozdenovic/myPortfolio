@@ -6,7 +6,7 @@ import { Container, Row, Col, Image} from 'react-bootstrap'
 function SecondPage() {
   return (
     <Container  fluid='true' className='main-container-second-page'>
-        <Container className='description-container'>
+        <Container className='description-container' id='about'>
             <Row>
                 <Col xs={{span:5, offset:1}}>
                     <h2>A propos</h2>

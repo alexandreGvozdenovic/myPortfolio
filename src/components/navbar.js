@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col,} from 'react-bootstrap'
-
+import {Link, animateScroll as scroll } from 'react-scroll'
 
 function NavBar() {
+
   var white = '#F4F4F9'
   var black = '#2F4550'
 
@@ -25,22 +26,52 @@ function NavBar() {
   }
   function mouseout(id) { 
     document.getElementById(id).style.color = navFontColor; 
-  } 
-  console.log(navBackground);
+  }
+  var scrollToTop = () => {
+    scroll.scrollToTop();
+  }; 
   return (
       <Container className='fixed-top' fluid='true'>
         <Row className='nav' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
             <Col xs={{span:2, offset:1}}>
-            <span className='name'>Alexandre Gvozdenovic</span>
+              <span className='name' onClick={ () => scrollToTop()}>Alexandre Gvozdenovic</span>
             </Col>
             <Col xs={2}>
-            A propos
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                A propos
+              </Link>
+            
             </Col>
             <Col xs={2}>
-            Projets
+              <Link
+                activeClass='active'
+                to='project'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Projets
+              </Link>
             </Col>
             <Col xs={2}>
-            Contact
+              <Link
+                activeClass='active'
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contact
+              </Link>
             </Col>
             <Col xs={1}>
             CV
