@@ -131,8 +131,23 @@ $text-dark-electric-blue: #586F7C;
     height: 100vh;
     background-color: $text-ghost-white;
 }
+.row-horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap !important;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.col-horizontal-scroll {
+  display: inline-block;
+  float: none;
+}
 .card-container {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
+    display: inline-block;
+    float: none;
 }
 .card-overlay {
     background: linear-gradient(180deg, rgba(88, 111, 124, 0.4) 0%, rgba(47, 69, 80, 0.8) 100%);
@@ -165,6 +180,40 @@ $text-dark-electric-blue: #586F7C;
     font-family: $mainFont;
     font-size: 16px;
     font-weight: normal;
+}
+.footer-container {
+  background-color: $background-charcoal;
+  margin-top: auto;
+}
+.footer-title {
+  font-family: $titleFont;
+  color: $text-ghost-white;
+  font-size: 32px;
+  margin-top: 32px;
+}
+.footer-text {
+  font-family: $mainFont;
+  color: $text-ghost-white;
+  margin-top: 16px;
+  font-size: 16px;
+}
+.contact-button {
+  background-color: $text-ghost-white;
+  color: $background-charcoal;
+  border: none;
+  border-radius: 80px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.contact-button:hover, .contact-button:focus, .contact-button:active {
+  background-color: rgba(245, 245, 250, 0.75);
+  color: $background-charcoal;
+}
+.bottom-footer {
+  padding-bottom: 16px;
+  color: $text-ghost-white;
+  font-family: $mainFont;
+  font-size: 16px;
 }
 // End of Third Component Specific CSS
 

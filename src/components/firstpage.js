@@ -1,13 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col,} from 'react-bootstrap'
-import NavBar from './navbar'
 
 
 function FirstPage() {
   return (
     <Container className='main-container-first-page' fluid='true'>
-      <NavBar />
       <Container className='title'>
       <Row>
         <Col>

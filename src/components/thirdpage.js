@@ -1,19 +1,21 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Button, Badge} from 'react-bootstrap'
+import ScrollArea from 'react-scrollbar'
 
 
 function ThirdPage() {
+    var currentYear = new Date;
   return (
-    <Container  fluid='true' className='main-container-third-page'>
+    <Container  fluid='true' className='d-flex flex-column main-container-third-page'>
         <Container>
             <Row>
                 <Col>
                     <h2>Projets</h2>
                 </Col>
             </Row>
-            <Row>
-            <Col xs={4}>
+            <Row className='row-horizontal-scroll'>
+            <Col xs={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitten.png')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -31,7 +33,7 @@ function ThirdPage() {
                     </Card.ImgOverlay>
                 </Card>
             </Col>
-            <Col xs={4}>
+            <Col xs={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitty.jpg')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -49,7 +51,7 @@ function ThirdPage() {
                     </Card.ImgOverlay>
                 </Card>
             </Col>
-            <Col xs={4}>
+            <Col xs={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitten.png')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -67,7 +69,7 @@ function ThirdPage() {
                     </Card.ImgOverlay>
                 </Card>
             </Col>
-            <Col xs={4}>
+            <Col xs={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitty.jpg')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -87,6 +89,22 @@ function ThirdPage() {
             </Col>
             </Row>
         </Container>
+        <Row className='footer-container'>
+            <Col className='d-flex flex-column justify-content-center'>
+                <h4 className='text-center footer-title'>Contact</h4>
+                <p className='text-center footer-text'>
+                    <strong>Besoin d'un développeur fullstack pour votre projet ?</strong><br/>
+                    Envoyez un message (ou parlons-en autour d'une <span role="img" aria-label="beer">🍻</span>)<br/>
+                    <Button className='contact-button'>On prend contact</Button>
+                </p>
+                <Container className='bottom-footer'>
+                    <div className='d-flex justify-content-between'>
+                        <div>{currentYear.getFullYear()}</div>
+                        <div>Codé avec <span role="img" aria-label="heart">❤️</span> par Alexandre Gvozdenovic</div>
+                    </div>
+                </Container>
+            </Col>
+        </Row>
     </Container>
   );
 }
