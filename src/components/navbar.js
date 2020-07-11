@@ -47,7 +47,7 @@ function NavBar() {
             </Col>
             <Col xs={2}>
               <Link
-                id='about'
+                id='about-nav'
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -55,7 +55,7 @@ function NavBar() {
                 offset={-70}
                 duration={500}
                 style={{color: navFontColor}}
-                onMouseOver={ () => mouseover('about')} onMouseOut={ () => mouseout('about')}
+                onMouseOver={ () => mouseover('about-nav')} onMouseOut={ () => mouseout('about-nav')}
               >
                 A propos
               </Link>
@@ -63,7 +63,7 @@ function NavBar() {
             </Col>
             <Col xs={2}>
               <Link
-                id='project'
+                id='project-nav'
                 activeClass='active'
                 to='project'
                 spy={true}
@@ -71,14 +71,14 @@ function NavBar() {
                 offset={-70}
                 duration={500}
                 style={{color: navFontColor}}
-                onMouseOver={ () => mouseover('project')} onMouseOut={ () => mouseout('project')}
+                onMouseOver={ () => mouseover('project-nav')} onMouseOut={ () => mouseout('project-nav')}
               >
                 Projets
               </Link>
             </Col>
             <Col xs={2}>
               <Link
-                id='contact'
+                id='contact-nav'
                 activeClass='active'
                 to='contact'
                 spy={true}
@@ -86,7 +86,7 @@ function NavBar() {
                 offset={-70}
                 duration={500}
                 style={{color: navFontColor}}
-                onMouseOver={ () => mouseover('contact')} onMouseOut={ () => mouseout('contact')}
+                onMouseOver={ () => mouseover('contact-nav')} onMouseOut={ () => mouseout('contact-nav')}
               >
                 Contact
               </Link>
