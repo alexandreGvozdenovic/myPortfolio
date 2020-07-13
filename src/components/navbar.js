@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col,} from 'react-bootstrap'
+import { Container, Row, Col, Navbar, Nav, Button} from 'react-bootstrap'
 import {Link, animateScroll as scroll } from 'react-scroll'
 
 function NavBar() {
@@ -34,8 +34,10 @@ function NavBar() {
   return (
       <Container className='fixed-top' fluid='true'>
         <Row className='nav' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
-            <Col xs={{span:2, offset:1}}>
-              <span
+          <Col xs={{span:10,offset:1}}>
+          <Navbar expand='lg'>
+            <Navbar.Brand >
+            <span
                 id='name'
                 className='name' 
                 onClick={ () => scrollToTop()}
@@ -44,8 +46,11 @@ function NavBar() {
               >
                 Alexandre Gvozdenovic
               </span>
-            </Col>
-            <Col xs={2}>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls='navbar-nav' style={{borderColor: navFontColor}}><i class="fas fa-bars" style={{color: navFontColor}}></i></Navbar.Toggle>
+            <Navbar.Collapse id='navbar-nav'>
+            <Nav className='justify-content-between nav-container' style={{width: '100%'}}>
+              <Nav.Item>
               <Link
                 id='about-nav'
                 activeClass="active"
@@ -59,9 +64,8 @@ function NavBar() {
               >
                 A propos
               </Link>
-            
-            </Col>
-            <Col xs={2}>
+              </Nav.Item>
+              <Nav.Item>
               <Link
                 id='project-nav'
                 activeClass='active'
@@ -75,8 +79,8 @@ function NavBar() {
               >
                 Projets
               </Link>
-            </Col>
-            <Col xs={2}>
+              </Nav.Item>
+              <Nav.Item>
               <Link
                 id='contact-nav'
                 activeClass='active'
@@ -90,20 +94,22 @@ function NavBar() {
               >
                 Contact
               </Link>
-            </Col>
-            <Col xs={1}>
-              CV
-            </Col>
-            <Col xs={{span:1, offset: -1}}>
-            <p className='text-right'>
-                <a id='Linkedin' className='link' href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/' style={{color: navFontColor}} onMouseOver={ () => mouseover('Linkedin')} onMouseOut={ () => mouseout('Linkedin')}>
-                  <i class="fab fa-linkedin-in nav-icons"></i>
+              </Nav.Item>
+              <Nav.Item>CV</Nav.Item>
+              <Nav.Item>
+              <span className='text-right'>
+                <a id='Linkedin' className='link' href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/' target="_blank" rel="noopener noreferrer" style={{color: navFontColor}} onMouseOver={ () => mouseover('Linkedin')} onMouseOut={ () => mouseout('Linkedin')}>
+                  <i class="fab fa-linkedin-in nav-icons first-icon"></i>
                 </a>
-                <a id='Github' className='link' href='https://github.com/alexandreGvozdenovic' style={{color: navFontColor}} onMouseOver={ () => mouseover('Github')} onMouseOut={ () => mouseout('Github')}>
+                <a id='Github' className='link' href='https://github.com/alexandreGvozdenovic' target="_blank" rel="noopener noreferrer" style={{color: navFontColor}} onMouseOver={ () => mouseover('Github')} onMouseOut={ () => mouseout('Github')}>
                   <i class="fab fa-github nav-icons"></i>
                 </a>
-            </p>
-            </Col>
+              </span>
+              </Nav.Item>
+            </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+          </Col>
         </Row>
       </Container>
   );

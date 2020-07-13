@@ -14,19 +14,31 @@ $text-dark-electric-blue: #586F7C;
 
 .nav {
     font-family: $mainFont;
-    padding-top: 24px;
-
   }
+.nav-container {
+  @media (min-width: 992px) {
+    align-items: center;
+  }
+}
   .name {
     font-weight: bold;
+    margin-right: 32px;
   }
-  
+  .nav-item {
+    @media (max-width: 992px) {
+      margin-bottom: 8px;
+    }
+  }
   .nav-icons {
     font-size: 24px;
     padding-left: 16px;
   }
+  .first-icon {
+    padding-left: 0px;
+  }
 
 // End of Nav Bar Specific CSS
+
 
 // First Component Specific CSS
 
@@ -78,13 +90,37 @@ $text-dark-electric-blue: #586F7C;
 .main-container-second-page {
     height: 100vh;
     background-color: $text-ghost-white;
-    background-image: 
-    url('./blobs/Blob-Haut-Gauche-Top.svg'),
-    url('./blobs/Blob-Haut-Gauche-Bottom.svg'),
-    url('./blobs/Blob-Milieu-Top.svg'),
-    url('./blobs/Blob-Milieu-Bottom.svg');
-    background-position: -309px -380px, -266px -320px, 800px 40px, 750px 60px;
-    background-repeat: no-repeat;
+    // background-image: 
+    // // url('./blobs/Blob-Haut-Gauche-Top.svg'),
+    // // url('./blobs/Blob-Haut-Gauche-Bottom.svg'),
+    // // -309px -380px, -266px -320px, 
+    // url('./blobs/Blob-Milieu-Top.svg'),
+    // url('./blobs/Blob-Milieu-Bottom.svg');
+    // background-position: 800px 40px, 750px 60px;
+    // background-repeat: no-repeat;
+    @media (max-width: 992px) {
+      height: 185vh;
+    }
+  }
+  .bilbo-col {
+    @media (max-width: 992px) {
+      margin-top: 64px;
+      margin-bottom: 192px;
+      img {
+      }
+    }
+  }
+  #bilbo-gif {
+    position: absolute;
+  }
+  #blob-milieu-top {
+    position: absolute;
+    top: -70px;
+    right: -20px;
+  }
+  #blob-milieu-bottom {
+    position: absolute;
+    top: -40px;
   }
   
   h2 {
@@ -128,26 +164,27 @@ $text-dark-electric-blue: #586F7C;
 // Third Component Specific CSS
 
 .main-container-third-page {
-    height: 100vh;
     background-color: $text-ghost-white;
 }
-.row-horizontal-scroll {
-  overflow-x: auto;
-  overflow-y: hidden;
-  flex-wrap: nowrap !important;
-  -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-.col-horizontal-scroll {
-  display: inline-block;
-  float: none;
-}
+
+// .row-horizontal-scroll {
+//   overflow-x: auto;
+//   overflow-y: hidden;
+//   flex-wrap: nowrap !important;
+//   -webkit-overflow-scrolling: touch;
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
+// .col-horizontal-scroll {
+//   display: inline-block;
+//   float: none;
+// }
 .card-container {
-    // margin-bottom: 32px;
-    display: inline-block;
-    float: none;
+    margin-bottom: 32px;
+    // display: inline-block;
+    // float: none;
+
 }
 .card-overlay {
     background: linear-gradient(180deg, rgba(88, 111, 124, 0.4) 0%, rgba(47, 69, 80, 0.8) 100%);

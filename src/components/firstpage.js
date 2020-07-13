@@ -6,6 +6,7 @@ import { Container, Row, Col,} from 'react-bootstrap'
 function FirstPage() {
   return (
     <Container className='main-container-first-page' fluid='true'>
+
       <Container className='title'>
       <Row>
         <Col>

@@ -13,7 +13,7 @@ function ThirdPage() {
                 </Col>
             </Row>
             <Row className='row-horizontal-scroll'>
-            <Col xs={4} className='col-horizontal-scroll'>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitten.png')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -31,7 +31,7 @@ function ThirdPage() {
                     </Card.ImgOverlay>
                 </Card>
             </Col>
-            <Col xs={4} className='col-horizontal-scroll'>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitty.jpg')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -49,7 +49,7 @@ function ThirdPage() {
                     </Card.ImgOverlay>
                 </Card>
             </Col>
-            <Col xs={4} className='col-horizontal-scroll'>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitten.png')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -67,7 +67,7 @@ function ThirdPage() {
                     </Card.ImgOverlay>
                 </Card>
             </Col>
-            <Col xs={4} className='col-horizontal-scroll'>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../Kitty.jpg')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
@@ -86,14 +86,14 @@ function ThirdPage() {
                 </Card>
             </Col>
             </Row>
-        </Container>
+            </Container>
         <Row className='footer-container' id='contact'>
             <Col className='d-flex flex-column justify-content-center'>
                 <h4 className='text-center footer-title'>Contact</h4>
                 <p className='text-center footer-text'>
                     <strong>Besoin d'un développeur fullstack pour votre projet ?</strong><br/>
                     Envoyez un message (ou parlons-en autour d'une <span role="img" aria-label="beer">🍻</span>)<br/>
-                    <Button className='contact-button' variant='light'>On prend contact</Button>
+                    <Button className='contact-button' variant='light' onClick={ () => window.location.href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/'}>On prend contact</Button>
                 </p>
                 <Container className='bottom-footer'>
                     <div className='d-flex justify-content-between'>
