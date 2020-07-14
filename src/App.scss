@@ -45,14 +45,14 @@ $text-dark-electric-blue: #586F7C;
 .main-container-first-page {
     height: 100vh;
     background-color: $background-charcoal;
-    background-image: 
-    url('./blobs/Blob-Haut-Droite-Top.svg'),
-    url('./blobs/Blob-Haut-Droite-Bottom.svg'),
-    url('./blobs/Blob-Haut-Gauche-Top.svg'),
-    url('./blobs/Blob-Haut-Gauche-Bottom.svg');
+    background-image:
+    url('./style/Blob-Haut-Droite-Top.svg'),
+    url('./style/Blob-Haut-Droite-Bottom.svg'),
+    url('./style/Blob-Haut-Gauche-Top.svg'),
+    url('./style/Blob-Haut-Gauche-Bottom.svg');
     background-position: 858px -65px, 799px 18px, -309px 320px, -266px 400px;
     background-repeat: no-repeat;
-  }
+    }
 
 .title {
     padding-top: 284px;
@@ -90,14 +90,6 @@ $text-dark-electric-blue: #586F7C;
 .main-container-second-page {
     height: 100vh;
     background-color: $text-ghost-white;
-    // background-image: 
-    // // url('./blobs/Blob-Haut-Gauche-Top.svg'),
-    // // url('./blobs/Blob-Haut-Gauche-Bottom.svg'),
-    // // -309px -380px, -266px -320px, 
-    // url('./blobs/Blob-Milieu-Top.svg'),
-    // url('./blobs/Blob-Milieu-Bottom.svg');
-    // background-position: 800px 40px, 750px 60px;
-    // background-repeat: no-repeat;
     @media (max-width: 992px) {
       height: 185vh;
     }
@@ -106,8 +98,6 @@ $text-dark-electric-blue: #586F7C;
     @media (max-width: 992px) {
       margin-top: 64px;
       margin-bottom: 192px;
-      img {
-      }
     }
   }
   #bilbo-gif {
@@ -117,6 +107,7 @@ $text-dark-electric-blue: #586F7C;
     position: absolute;
     top: -70px;
     right: -20px;
+
   }
   #blob-milieu-bottom {
     position: absolute;
@@ -167,23 +158,31 @@ $text-dark-electric-blue: #586F7C;
     background-color: $text-ghost-white;
 }
 
-// .row-horizontal-scroll {
-//   overflow-x: auto;
-//   overflow-y: hidden;
-//   flex-wrap: nowrap !important;
-//   -webkit-overflow-scrolling: touch;
-//   &::-webkit-scrollbar {
-//     display: none;
-//   }
-// }
-// .col-horizontal-scroll {
-//   display: inline-block;
-//   float: none;
-// }
+.row-horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap !important;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* FireFox */
+}
+.col-horizontal-scroll {
+  display: inline-block;
+  float: none;
+  max-width: 30%;
+  flex: 0 0 30%;
+  @media (max-width: 992px) {
+    max-width: 80%;
+    flex: 0 0 80%;
+  }
+}
 .card-container {
     margin-bottom: 32px;
-    // display: inline-block;
-    // float: none;
+    display: inline-block;
+    float: none;
 
 }
 .card-overlay {

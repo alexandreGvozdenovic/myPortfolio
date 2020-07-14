@@ -15,7 +15,7 @@ function ThirdPage() {
             <Row className='row-horizontal-scroll'>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
-                    <Card.Img src={require('../Kitten.png')} alt='Kitty' height='256px' />
+                    <Card.Img src={require('../style/Kitten.png')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
                         <Card.Text>
@@ -33,7 +33,7 @@ function ThirdPage() {
             </Col>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
-                    <Card.Img src={require('../Kitty.jpg')} alt='Kitty' height='256px' />
+                    <Card.Img src={require('../style/Kitty.jpg')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
                         <Card.Text>
@@ -51,7 +51,7 @@ function ThirdPage() {
             </Col>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
-                    <Card.Img src={require('../Kitten.png')} alt='Kitty' height='256px' />
+                    <Card.Img src={require('../style/Kitten.png')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
                         <Card.Text>
@@ -69,7 +69,7 @@ function ThirdPage() {
             </Col>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
-                    <Card.Img src={require('../Kitty.jpg')} alt='Kitty' height='256px' />
+                    <Card.Img src={require('../style/Kitty.jpg')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
                         <Card.Text>
