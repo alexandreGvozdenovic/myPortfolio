@@ -6,10 +6,10 @@ function ThirdPage() {
     var currentYear = new Date();
   return (
     <Container  fluid='true' className='d-flex flex-column main-container-third-page'>
-        <Container id='project'>
+        <Container >
             <Row>
                 <Col>
-                    <h2>Projets</h2>
+                    <h2 id='project'>Projets</h2>
                 </Col>
             </Row>
             <Row className='row-horizontal-scroll'>

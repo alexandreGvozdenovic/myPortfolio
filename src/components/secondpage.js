@@ -6,10 +6,10 @@ import { Container, Row, Col, Image} from 'react-bootstrap'
 function SecondPage() {
   return (
     <Container  fluid='true' className='main-container-second-page'>
-        <Container className='description-container' id='about'>
+        <Container className='description-container'>
             <Row>
                 <Col xs={{span:10, offset:1}} md={{span: 5, offset:1}}>
-                    <h2>A propos</h2>
+                    <h2 id='about'>A propos</h2>
                     <p className='desc'> <strong>Lassé des tâches fonctionnelles, j'ai sauté la barrière technique pour devenir 
                         développeur fullstack.</strong> <br/><br/> Après 10 semaines de coding bootcamp @La Capsule je suis 
                         formé aux technologies React et Express. Je suis disponible pour une première 

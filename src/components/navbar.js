@@ -11,6 +11,7 @@ function NavBar() {
   const [navBackground, setNavBackground] = useState('')
   const [navFontColor, setNavFontColor] = useState(white)
   const [navBoxShadow, setNavBoxShadow] = useState('')
+  const [navExpanded, setNavExpanded] = useState(false)
 
   document.addEventListener("scroll", () => {
     const backgroundcolor = window.scrollY < 100 ? "" : white;
@@ -33,19 +34,19 @@ function NavBar() {
   }; 
   return (
 
-          <Navbar expand='lg' className='fixed-top' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
+          <Navbar expanded={navExpanded} expand='lg' className='fixed-top' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
             <Navbar.Brand >
             <span
                 id='name'
                 className='name' 
-                onClick={ () => scrollToTop()}
+                onClick={ () => {scrollToTop();setNavExpanded(false)}}
                 style={{color: navFontColor}}
                 onMouseOver={ () => mouseover('name')} onMouseOut={ () => mouseout('name')}
               >
                 Alexandre Gvozdenovic
               </span>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls='navbar-nav' style={{borderColor: navFontColor}}><i class="fas fa-bars" style={{color: navFontColor}}></i></Navbar.Toggle>
+            <Navbar.Toggle aria-controls='navbar-nav' style={{borderColor: navFontColor}}><i class="fas fa-bars" style={{color: navFontColor}} onClick={()=>setNavExpanded(!navExpanded)}></i></Navbar.Toggle>
             <Navbar.Collapse id='navbar-nav'>
             <Nav className='justify-content-between nav-container' style={{width: '100%'}}>
               <Nav.Item>
@@ -59,6 +60,7 @@ function NavBar() {
                 duration={500}
                 style={{color: navFontColor}}
                 onMouseOver={ () => mouseover('about-nav')} onMouseOut={ () => mouseout('about-nav')}
+                onClick = { () => setNavExpanded(false)}
               >
                 A propos
               </Link>
@@ -74,6 +76,7 @@ function NavBar() {
                 duration={500}
                 style={{color: navFontColor}}
                 onMouseOver={ () => mouseover('project-nav')} onMouseOut={ () => mouseout('project-nav')}
+                onClick = { () => setNavExpanded(false)}
               >
                 Projets
               </Link>
@@ -89,13 +92,14 @@ function NavBar() {
                 duration={500}
                 style={{color: navFontColor}}
                 onMouseOver={ () => mouseover('contact-nav')} onMouseOut={ () => mouseout('contact-nav')}
+                onClick = { () => setNavExpanded(false)}
               >
                 Contact
               </Link>
               </Nav.Item>
               <Nav.Item>CV</Nav.Item>
               <Nav.Item>
-              <span className='text-right'>
+              <span className='text-right' onClick = { () => setNavExpanded(false)}>
                 <a id='Linkedin' className='link' href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/' target="_blank" rel="noopener noreferrer" style={{color: navFontColor}} onMouseOver={ () => mouseover('Linkedin')} onMouseOut={ () => mouseout('Linkedin')}>
                   <i class="fab fa-linkedin-in nav-icons first-icon"></i>
                 </a>
