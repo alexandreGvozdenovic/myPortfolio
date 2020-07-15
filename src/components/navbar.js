@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Navbar, Nav, Button} from 'react-bootstrap'
+import { Navbar, Nav} from 'react-bootstrap'
 import {Link, animateScroll as scroll } from 'react-scroll'
 
 function NavBar() {
@@ -32,10 +32,8 @@ function NavBar() {
     scroll.scrollToTop();
   }; 
   return (
-      <Container className='fixed-top' fluid='true'>
-        <Row className='nav' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
-          <Col xs={{span:10,offset:1}}>
-          <Navbar expand='lg'>
+
+          <Navbar expand='lg' className='fixed-top' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
             <Navbar.Brand >
             <span
                 id='name'
@@ -109,9 +107,6 @@ function NavBar() {
             </Nav>
             </Navbar.Collapse>
           </Navbar>
-          </Col>
-        </Row>
-      </Container>
   );
 }
 

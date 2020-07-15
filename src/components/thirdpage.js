@@ -95,12 +95,11 @@ function ThirdPage() {
                     Envoyez un message (ou parlons-en autour d'une <span role="img" aria-label="beer">🍻</span>)<br/>
                     <Button className='contact-button' variant='light' onClick={ () => window.location.href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/'}>On prend contact</Button>
                 </p>
-                <Container className='bottom-footer'>
-                    <div className='d-flex justify-content-between'>
-                        <div>{currentYear.getFullYear()}</div>
-                        <div>Codé avec <span role="img" aria-label="heart">❤️</span> par Alexandre Gvozdenovic</div>
-                    </div>
-                </Container>
+                <div className='d-flex justify-content-between bottom-footer'>
+                    <div>{currentYear.getFullYear()}</div>
+                    <div>Codé avec <span role="img" aria-label="heart">❤️</span> par Alexandre Gvozdenovic</div>
+                </div>
+ 
             </Col>
         </Row>
     </Container>

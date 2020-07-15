@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col,} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import NavBar from './components/navbar'
 import FirstPage from './components/firstpage'
 import SecondPage from './components/secondpage'

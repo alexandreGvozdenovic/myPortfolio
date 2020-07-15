@@ -9,6 +9,13 @@ $background-charcoal: #2F4550;
 $text-ghost-white : #F4F4F9;
 $text-dark-electric-blue: #586F7C;
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 // Nav Bar Specific CSS
 
@@ -129,6 +136,10 @@ $text-dark-electric-blue: #586F7C;
     background-color: $background-charcoal;
     border: $background-charcoal;
     border-radius: 8px;
+    @media (max-width: 992px) {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
   }
   .skill-title {
     color: $text-ghost-white;
@@ -229,6 +240,8 @@ $text-dark-electric-blue: #586F7C;
   color: $text-ghost-white;
   margin-top: 16px;
   font-size: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 .contact-button {
   background-color: $text-ghost-white;
@@ -244,9 +257,15 @@ $text-dark-electric-blue: #586F7C;
 }
 .bottom-footer {
   padding-bottom: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
   color: $text-ghost-white;
   font-family: $mainFont;
   font-size: 16px;
+  @media (max-width: 992px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 // End of Third Component Specific CSS
 
