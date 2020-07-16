@@ -10,7 +10,7 @@ import ThirdPage from './components/thirdpage'
 
 function App() {
   return (
-    <Container fluid='true' className='main-app'> 
+    <Container fluid='true' className='main-app' onScroll={() => console.log('je scroll')}> 
       <NavBar />
       <FirstPage />
       <SecondPage id='section1' />

@@ -24,22 +24,22 @@ function SecondPage() {
             </Row>
             <Row className='justify-content-center skills-row'>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
-                <i class="fas fa-laptop-code skill-icon"></i>
+                <i className="fas fa-laptop-code skill-icon"></i>
                 <h4 className='skill-title'>Front end</h4>
                 <p className='text-center skill'>HTML5, CSS3, JavaScript,<br/> React, Redux</p>
             </Col>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
-                <i class="fas fa-server skill-icon"></i>
+                <i className="fas fa-server skill-icon"></i>
                 <h4 className='skill-title'>Back end</h4>
                 <p className='text-center skill'>Node.JS, Express.JS</p>
             </Col>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
-                <i class="fas fa-database skill-icon"></i>
+                <i className="fas fa-database skill-icon"></i>
                 <h4 className='skill-title'>Base de données</h4>
                 <p className='text-center skill'>Mongo DB</p>
             </Col>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
-                <i class="fab fa-github-alt skill-icon"></i>
+                <i className="fab fa-github-alt skill-icon"></i>
                 <h4 className='skill-title'>Workflow</h4>
                 <p className='text-center skill'>Git, Github</p>
             </Col>

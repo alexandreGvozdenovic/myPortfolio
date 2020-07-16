@@ -46,8 +46,8 @@ function NavBar() {
                 Alexandre Gvozdenovic
               </span>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls='navbar-nav' style={{borderColor: navFontColor}}><i class="fas fa-bars" style={{color: navFontColor}} onClick={()=>setNavExpanded(!navExpanded)}></i></Navbar.Toggle>
-            <Navbar.Collapse id='navbar-nav'>
+            <Navbar.Toggle style={{borderColor: navFontColor}} onClick={()=>setNavExpanded(!navExpanded)}><i className="fas fa-bars" style={{color: navFontColor}} ></i></Navbar.Toggle>
+            <Navbar.Collapse >
             <Nav className='justify-content-between nav-container' style={{width: '100%'}}>
               <Nav.Item>
               <Link
@@ -101,10 +101,10 @@ function NavBar() {
               <Nav.Item>
               <span className='text-right' onClick = { () => setNavExpanded(false)}>
                 <a id='Linkedin' className='link' href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/' target="_blank" rel="noopener noreferrer" style={{color: navFontColor}} onMouseOver={ () => mouseover('Linkedin')} onMouseOut={ () => mouseout('Linkedin')}>
-                  <i class="fab fa-linkedin-in nav-icons first-icon"></i>
+                  <i className="fab fa-linkedin-in nav-icons first-icon"></i>
                 </a>
                 <a id='Github' className='link' href='https://github.com/alexandreGvozdenovic' target="_blank" rel="noopener noreferrer" style={{color: navFontColor}} onMouseOver={ () => mouseover('Github')} onMouseOut={ () => mouseout('Github')}>
-                  <i class="fab fa-github nav-icons"></i>
+                  <i className="fab fa-github nav-icons"></i>
                 </a>
               </span>
               </Nav.Item>

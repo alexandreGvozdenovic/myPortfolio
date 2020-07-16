@@ -213,16 +213,16 @@ html,body
 .badge {
     background-color: $text-ghost-white;
     margin-top: 16px;
-    margin-right: 16px;
+    margin-right: 8px;
 }
 .badge-text {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    // padding-top: 8px;
+    // padding-bottom: 8px;
+    // padding-left: 8px;
+    // padding-right: 8px;
     color: $text-dark-electric-blue;
     font-family: $mainFont;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
 }
 .footer-container {

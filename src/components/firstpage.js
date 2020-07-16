@@ -21,7 +21,7 @@ function FirstPage() {
       </Container>
       <Row className='learn-more'>
         <Col>
-          <p className='text-center text-learn-more'>En savoir plus <i class="fas fa-mouse"></i></p>
+          <p className='text-center text-learn-more'>En savoir plus <i className="fas fa-mouse"></i></p>
         </Col>
       </Row>
     </Container>

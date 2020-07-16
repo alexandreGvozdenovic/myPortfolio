@@ -15,12 +15,53 @@ function ThirdPage() {
             <Row className='row-horizontal-scroll'>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
+                    <Card.Img src={require('../style/shakengo.jpg')} alt='Kitty' height='256px' />
+                    <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
+                        <Card.Title><h4 className='card-title'>Shake'N'Go<i className="fab fa-github card-title-icons"></i></h4></Card.Title>
+                        <Card.Text className='card-text'>
+                            Application mobile qui propose des choix de sorties aléatoires à Paris grâce à Google Places API.<br/>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>React Native</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Redux</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Express.js</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Google Places</span>
+                        </Badge>
+                        </Card.Text>
+                    </Card.ImgOverlay>
+                </Card>
+            </Col>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
+                <Card className='card-container'>
+                    <Card.Img src={require('../style/Kitty.jpg')} alt='Kitty' height='256px' />
+                    <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
+                        <Card.Title><h4 className='card-title'>Nom du projet <i className="fab fa-github card-title-icons"></i></h4></Card.Title>
+                        <Card.Text className='card-text'>
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content.<br/>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Techno 1</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Techno 2</span>
+                        </Badge>
+                        </Card.Text>
+                    </Card.ImgOverlay>
+                </Card>
+            </Col>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
+                <Card className='card-container'>
                     <Card.Img src={require('../style/Kitten.png')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
-                        <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
-                        <Card.Text>
-                        <p className='card-text'>Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
+                        <Card.Title><h4 className='card-title'>Nom du projet <i className="fab fa-github card-title-icons"></i></h4></Card.Title>
+                        <Card.Text className='card-text'>
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content.<br/>
                         <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
                             <span className='badge-text'>Techno 1</span>
                         </Badge>
@@ -35,46 +76,10 @@ function ThirdPage() {
                 <Card className='card-container'>
                     <Card.Img src={require('../style/Kitty.jpg')} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
-                        <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
-                        <Card.Text>
-                        <p className='card-text'>Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
-                            <span className='badge-text'>Techno 1</span>
-                        </Badge>
-                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
-                            <span className='badge-text'>Techno 2</span>
-                        </Badge>
-                        </Card.Text>
-                    </Card.ImgOverlay>
-                </Card>
-            </Col>
-            <Col xs={12} md={4} className='col-horizontal-scroll'>
-                <Card className='card-container'>
-                    <Card.Img src={require('../style/Kitten.png')} alt='Kitty' height='256px' />
-                    <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
-                        <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
-                        <Card.Text>
-                        <p className='card-text'>Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
-                            <span className='badge-text'>Techno 1</span>
-                        </Badge>
-                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
-                            <span className='badge-text'>Techno 2</span>
-                        </Badge>
-                        </Card.Text>
-                    </Card.ImgOverlay>
-                </Card>
-            </Col>
-            <Col xs={12} md={4} className='col-horizontal-scroll'>
-                <Card className='card-container'>
-                    <Card.Img src={require('../style/Kitty.jpg')} alt='Kitty' height='256px' />
-                    <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
-                        <Card.Title><h4 className='card-title'>Nom du projet <i class="fab fa-github card-title-icons"></i></h4></Card.Title>
-                        <Card.Text>
-                        <p className='card-text'>Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
+                        <Card.Title><h4 className='card-title'>Nom du projet <i className="fab fa-github card-title-icons"></i></h4></Card.Title>
+                        <Card.Text className='card-text'>
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content.<br/>
                         <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
                             <span className='badge-text'>Techno 1</span>
                         </Badge>
