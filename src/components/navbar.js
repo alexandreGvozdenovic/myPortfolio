@@ -34,7 +34,7 @@ function NavBar() {
   }; 
   return (
 
-          <Navbar expanded={navExpanded} expand='lg' className='fixed-top' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
+          <Navbar expanded={navExpanded} expand='lg' className='fixed-top navbar-container' style={{backgroundColor: navBackground, color: navFontColor, boxShadow: navBoxShadow }}>
             <Navbar.Brand >
             <span
                 id='name'

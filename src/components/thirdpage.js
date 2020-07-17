@@ -1,19 +1,9 @@
-import React, { useRef, useCallback } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Button, Badge} from 'react-bootstrap'
 
 function ThirdPage() {
     var currentYear = new Date();
-    const containerRef = useRef();
-    const onWheel = useCallback(e => {
-        e.preventDefault()
-        const containerScrollPosition = containerRef.current.scrollLeft;
-        containerRef.current.scrollTo({
-            top: 0,
-            left: containerScrollPosition + e.deltaY*40,
-            behaviour: 'smooth' //if you want smooth scrolling
-        })
-    },[])
     
   return (
     <Container  fluid='true' className='d-flex flex-column main-container-third-page'>
@@ -23,7 +13,7 @@ function ThirdPage() {
                     <h2 id='project'>Projets</h2>
                 </Col>
             </Row>
-            <Row id='scroll-container' ref={containerRef} className='row-horizontal-scroll' onWheel={onWheel}>
+            <Row className='row-horizontal-scroll'>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
                     <Card.Img src={require('../style/shakengo.jpg')} alt='Kitty' height='256px' />

@@ -18,7 +18,20 @@ html,body
 }
 
 // Nav Bar Specific CSS
-
+.navbar-container {
+  @media (min-width: 768px) {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+  @media (min-width: 1800px) {
+    padding-left: 384px;
+    padding-right: 384px;
+  }
+  @media (min-width: 2400px) {
+    padding-left: 704px;
+    padding-right: 704px;
+  }
+}
 .nav {
     font-family: $mainFont;
   }
@@ -51,9 +64,6 @@ html,body
 
 .main-container-first-page {
     height: 100vh;
-    @media (min-width: 1800px) {
-      height: 100vh;
-    }
     background-color: $background-charcoal;
     background-image:
     url('./style/Blob-Haut-Droite-Top.svg'),
@@ -70,9 +80,7 @@ html,body
     background-repeat: no-repeat;
     }
 
-.title {
-    // padding-top: 284px;
-}
+
 
 .text-title {
     font-family: $titleFont;
@@ -88,18 +96,16 @@ html,body
     color: $text-ghost-white;
     font-size: 24px;
   }
-  .learn-more-container {
-
-  }
-  .learn-more {
-      // margin-top: 20px;
-  }
+  
   .text-learn-more {
     font-family: $mainFont;
     color: $text-ghost-white;
     position: absolute;
-    bottom: 0px;
+    bottom: 16px;
     left: 46.5%;
+    @media (max-width: 768px) {
+      left: 33%;
+    }
   }
   .fa-mouse {
     padding-left: 8px;
@@ -181,31 +187,36 @@ html,body
   margin-right: 32px;
 }
 .row-horizontal-scroll {
-  overflow-x: auto;
-  overflow-y: hidden;
-  flex-wrap: nowrap !important;
-  -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar {
-    display: none;
+  @media (max-width: 1200px){
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* FireFox */
+
   }
-  -ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* FireFox */
+
 }
 .col-horizontal-scroll {
-  display: inline-block;
-  float: none;
-  max-width: 30%;
-  flex: 0 0 30%;
-  @media (max-width: 992px) {
-    max-width: 80%;
-    flex: 0 0 80%;
+  @media (max-width: 1200px) {
+    display: inline-block;
+    float: none;
+    max-width: 30%;
+    flex: 0 0 30%;
+    @media (max-width: 992px) {
+      max-width: 80%;
+      flex: 0 0 80%;
+    }
+
   }
+
 }
 .card-container {
-    margin-bottom: 32px;
-    // display: inline-block;
-    // float: none;
-
+  margin-bottom: 32px;
 }
 .card-overlay {
     background: linear-gradient(180deg, rgba(88, 111, 124, 0.4) 0%, rgba(47, 69, 80, 0.8) 100%);
@@ -230,10 +241,6 @@ html,body
     margin-right: 8px;
 }
 .badge-text {
-    // padding-top: 8px;
-    // padding-bottom: 8px;
-    // padding-left: 8px;
-    // padding-right: 8px;
     color: $text-dark-electric-blue;
     font-family: $mainFont;
     font-size: 14px;
