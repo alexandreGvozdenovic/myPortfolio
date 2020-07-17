@@ -51,6 +51,9 @@ html,body
 
 .main-container-first-page {
     height: 100vh;
+    @media (min-width: 1800px) {
+      height: 100vh;
+    }
     background-color: $background-charcoal;
     background-image:
     url('./style/Blob-Haut-Droite-Top.svg'),
@@ -58,11 +61,17 @@ html,body
     url('./style/Blob-Haut-Gauche-Top.svg'),
     url('./style/Blob-Haut-Gauche-Bottom.svg');
     background-position: 858px -65px, 799px 18px, -309px 320px, -266px 400px;
+    @media (min-width: 1800px) {
+      background-position: 1300px -65px, 1200px 18px, -309px 320px, -266px 400px;
+    }
+    @media (min-width: 2400px) {
+      background-position: 1900px -65px, 1800px 18px, -309px 320px, -266px 400px;
+    }
     background-repeat: no-repeat;
     }
 
 .title {
-    padding-top: 284px;
+    // padding-top: 284px;
 }
 
 .text-title {
@@ -79,13 +88,18 @@ html,body
     color: $text-ghost-white;
     font-size: 24px;
   }
-  
+  .learn-more-container {
+
+  }
   .learn-more {
-      margin-top: 160px;
+      // margin-top: 20px;
   }
   .text-learn-more {
     font-family: $mainFont;
     color: $text-ghost-white;
+    position: absolute;
+    bottom: 0px;
+    left: 46.5%;
   }
   .fa-mouse {
     padding-left: 8px;
@@ -110,7 +124,6 @@ html,body
     position: absolute;
     top: -70px;
     right: -20px;
-
   }
   #blob-milieu-bottom {
     position: absolute;
@@ -136,10 +149,8 @@ html,body
     background-color: $background-charcoal;
     border: $background-charcoal;
     border-radius: 8px;
-    @media (max-width: 992px) {
-      margin-left: 16px;
-      margin-right: 16px;
-    }
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .skill-title {
     color: $text-ghost-white;
@@ -165,7 +176,10 @@ html,body
     background-color: $text-ghost-white;
     padding-top: 64px;
 }
-
+.container-projets {
+  margin-left: 32px;
+  margin-right: 32px;
+}
 .row-horizontal-scroll {
   overflow-x: auto;
   overflow-y: hidden;

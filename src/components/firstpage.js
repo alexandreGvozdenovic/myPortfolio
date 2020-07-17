@@ -5,7 +5,7 @@ import { Container, Row, Col,} from 'react-bootstrap'
 
 function FirstPage() {
   return (
-    <Container className='main-container-first-page' fluid='true'>
+    <Container className='d-flex flex-column justify-content-center main-container-first-page' fluid='true'>
 
       <Container className='title'>
       <Row>
@@ -19,11 +19,7 @@ function FirstPage() {
         </Col>
       </Row>
       </Container>
-      <Row className='learn-more'>
-        <Col>
-          <p className='text-center text-learn-more'>En savoir plus <i className="fas fa-mouse"></i></p>
-        </Col>
-      </Row>
+      <p className='text-center text-learn-more'>En savoir plus <i className="fas fa-mouse"></i></p>
     </Container>
   );
 }
