@@ -11,7 +11,7 @@ $text-dark-electric-blue: #586F7C;
 
 html,body
 {
-    width: 100%;
+    width: 100vw;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
@@ -86,6 +86,10 @@ html,body
     font-family: $titleFont;
     color: $text-ghost-white;
     font-size: 64px;
+    @media (max-width: 900px) {
+      font-size: 56px;
+
+    }
   }
   
   .subtitle {
@@ -157,6 +161,8 @@ html,body
     border-radius: 8px;
     margin-left: 16px;
     margin-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .skill-title {
     color: $text-ghost-white;
@@ -167,11 +173,16 @@ html,body
   .skill {
     color: $text-ghost-white;
     font-family: $mainFont;
+    margin-bottom: 0px;
   }
   .skill-icon{
-    margin-top: 42px;
     font-size: 32px;
     color: $text-ghost-white;
+  }
+  .bottom-icon {
+    @media (max-width: 992px) {
+      margin-top: 32px;
+    }
   }
 
 // End of Second Component Specific CSS

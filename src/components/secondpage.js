@@ -34,12 +34,12 @@ function SecondPage() {
                 <p className='text-center skill'>Node.JS, Express.JS</p>
             </Col>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
-                <i className="fas fa-database skill-icon"></i>
+                <i className="fas fa-database skill-icon bottom-icon"></i>
                 <h4 className='skill-title'>Base de données</h4>
                 <p className='text-center skill'>Mongo DB</p>
             </Col>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
-                <i className="fab fa-github-alt skill-icon"></i>
+                <i className="fab fa-github-alt skill-icon bottom-icon"></i>
                 <h4 className='skill-title'>Workflow</h4>
                 <p className='text-center skill'>Git, Github</p>
             </Col>
