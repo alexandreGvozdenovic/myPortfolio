@@ -16,7 +16,7 @@ function ThirdPage() {
             <Row className='row-horizontal-scroll'>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
-                    <Card.Img src={require('../style/shakengo.jpg')} alt='Kitty' height='256px' />
+                    <Card.Img src={'./style/shakengo.jpg'} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title>
                             <h4 className='card-title'>
@@ -44,7 +44,7 @@ function ThirdPage() {
             </Col>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
-                    <Card.Img src={require('../style/faceup.jpg')} alt='Kitty' height='256px' />
+                    <Card.Img src={'./style/faceup.jpg'} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title>
                             <h4 className='card-title'>
@@ -72,7 +72,7 @@ function ThirdPage() {
             </Col>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
-                    <Card.Img src={require('../style/Kitten.png')} alt='Kitty' height='256px' />
+                    <Card.Img src={'./style/Kitten.png'} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title>
                             <h4 className='card-title'>
