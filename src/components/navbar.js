@@ -97,7 +97,9 @@ function NavBar() {
                 Contact
               </Link>
               </Nav.Item>
-              <Nav.Item>CV</Nav.Item>
+              <Nav.Item>
+                <a id='CV' href='Alexandre-Gvozdenovic-CV.pdf' target="_blank" rel="noopener noreferrer" style={{color: navFontColor}} onMouseOver={ () => mouseover('CV')} onMouseOut={ () => mouseout('CV')}>CV</a>
+              </Nav.Item>
               <Nav.Item>
               <span className='text-right' onClick = { () => setNavExpanded(false)}>
                 <a id='Linkedin' className='link' href='https://www.linkedin.com/in/alexandre-gvozdenovic-5b277813a/' target="_blank" rel="noopener noreferrer" style={{color: navFontColor}} onMouseOver={ () => mouseover('Linkedin')} onMouseOut={ () => mouseout('Linkedin')}>
