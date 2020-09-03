@@ -17,9 +17,9 @@ function SecondPage() {
                     </p>
                 </Col>
                 <Col className='d-flex justify-content-center bilbo-col' xs= {{span:10, offset:1}} md={{span:4, offset:1}}>
-                    <img id='blob-milieu-top' src={'./style/Blob-Milieu-Top.svg'} alt='blob'></img>
-                    <img id='blob-milieu-bottom' src={'./style/Blob-Milieu-Bottom.svg'} alt='blob'></img>
-                    <Image id='bilbo-gif' src={'./style/bilbo.gif'} rounded />
+                    <img id='blob-milieu-top' src={'./Blob-Milieu-Top.svg'} alt='blob'></img>
+                    <img id='blob-milieu-bottom' src={'./Blob-Milieu-Bottom.svg'} alt='blob'></img>
+                    <Image id='bilbo-gif' src={'./bilbo.gif'} rounded />
                 </Col>
             </Row>
             <Row className='justify-content-center skills-row'>
