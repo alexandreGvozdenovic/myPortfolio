@@ -19,7 +19,7 @@ function FirstPage() {
         </Col>
       </Row>
       </Container>
-      <p className='text-center text-learn-more'>En savoir plus <i className="fas fa-mouse"></i></p>
+      {/* <p className='text-center text-learn-more'>En savoir plus <i className="fas fa-mouse"></i></p> */}
     </Container>
   );
 }

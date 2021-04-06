@@ -16,6 +16,44 @@ function ThirdPage() {
             <Row className='row-horizontal-scroll'>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
+                    <Card.Img src={'./interfast.jpg'} alt='InterFast' height='256px' />
+                    <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
+                        <Card.Title>
+                            <h4 className='card-title'>
+                                InterFast
+                                <a href='https://www.inter-fast.fr/' target="_blank" rel="noopener noreferrer" style={{color: 'white'}}><i className="fas fa-globe card-title-icons"></i></a>
+                                <a href='https://play.google.com/store/apps/details?id=com.interfast.interfast' target="_blank" rel="noopener noreferrer" style={{color: 'white'}}><i className="fab fa-android card-title-icons-rightest"></i></a>
+                                <a href='https://apps.apple.com/us/app/interfast/id1536410979' target="_blank" rel="noopener noreferrer" style={{color: 'white'}}><i className="fab fa-apple card-title-icons-rightest"></i></a>
+
+                                
+                            </h4>
+                        </Card.Title>
+                        <Card.Text className='card-text'>
+                        Application web et mobile de génération de rapport d’intervention pour les acteurs du BTP.<br/>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>React Native</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>React.js</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Redux</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Express.js</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Mongo DB</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Sendinblue</span>
+                        </Badge>
+                        </Card.Text>
+                    </Card.ImgOverlay>
+                </Card>
+            </Col>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
+                <Card className='card-container'>
                     <Card.Img src={'./shakengo.jpg'} alt='Kitty' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title>
@@ -76,7 +114,7 @@ function ThirdPage() {
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title>
                             <h4 className='card-title'>
-                                Kitty Shop 
+                                E-Shop 
                                 <a href='https://github.com/alexandreGvozdenovic/kittenShop' target="_blank" rel="noopener noreferrer" style={{color: 'white'}}><i className="fab fa-github card-title-icons"></i></a>
                                 <a href='https://kittyshop.herokuapp.com/' target="_blank" rel="noopener noreferrer" style={{color: 'white'}}><i className="fas fa-globe card-title-icons-rightest"></i></a>
                             </h4>

@@ -11,9 +11,9 @@ function SecondPage() {
                 <Col xs={{span:10, offset:1}} md={{span: 5, offset:1}}>
                     <h2 id='about'>A propos</h2>
                     <p className='desc'> <strong>Lassé des tâches fonctionnelles, j'ai sauté la barrière technique pour devenir 
-                        développeur fullstack.</strong> <br/><br/> Après 10 semaines de coding bootcamp @La Capsule je suis 
-                        formé aux technologies React et Express. Je suis disponible pour une première 
-                        aventure afin de créer des produits engageants et approfondir mes connaissances.
+                        développeur fullstack.</strong> <br/><br/> Après 10 semaines de coding bootcamp @La Capsule
+                        et une première expérience réussie avec InterFast je cherche actuellement de nouveaux challenges.
+
                     </p>
                 </Col>
                 <Col className='d-flex justify-content-center bilbo-col' xs= {{span:10, offset:1}} md={{span:4, offset:1}}>
@@ -26,7 +26,7 @@ function SecondPage() {
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
                 <i className="fas fa-laptop-code skill-icon"></i>
                 <h4 className='skill-title'>Front end</h4>
-                <p className='text-center skill'>HTML5, CSS3, JavaScript,<br/> React, Redux</p>
+                <p className='text-center skill'>HTML5, CSS3, JavaScript,<br/> React, Redux, React Native</p>
             </Col>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
                 <i className="fas fa-server skill-icon"></i>
