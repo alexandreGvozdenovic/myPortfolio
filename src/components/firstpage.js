@@ -15,7 +15,7 @@ function FirstPage() {
       </Row>
       <Row className='subtitle'>
         <Col>
-          <h3 className='text-center text-subtitle'>Développeur fullstack React/Express @Paris</h3>
+          <h3 className='text-center text-subtitle'>Développeur Front-end JavaScript @Paris</h3>
         </Col>
       </Row>
       </Container>

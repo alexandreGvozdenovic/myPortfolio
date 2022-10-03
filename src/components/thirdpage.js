@@ -16,6 +16,37 @@ function ThirdPage() {
             <Row className='row-horizontal-scroll'>
             <Col xs={12} md={4} className='col-horizontal-scroll'>
                 <Card className='card-container'>
+                    <Card.Img src={'./Cyclofix.jpg'} alt='Cyclofix' height='256px' />
+                    <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
+                        <Card.Title>
+                            <h4 className='card-title'>
+                                Cyclofix
+                                <a href='https://www.cyclofix.com/' target="_blank" rel="noopener noreferrer" style={{color: 'white'}}><i className="fas fa-globe card-title-icons"></i></a>
+                            </h4>
+                        </Card.Title>
+                        <Card.Text className='card-text'>
+                        Réparation vélo et trottinette électrique à domicile.<br/>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>React Native</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>React.js</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Redux</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Style-system</span>
+                        </Badge>
+                        <Badge className='d-inline-flex align-items-center justify-content-center badge' pill >
+                            <span className='badge-text'>Next.js</span>
+                        </Badge>
+                        </Card.Text>
+                    </Card.ImgOverlay>
+                </Card>
+            </Col>
+            <Col xs={12} md={4} className='col-horizontal-scroll'>
+                <Card className='card-container'>
                     <Card.Img src={'./interfast.jpg'} alt='InterFast' height='256px' />
                     <Card.ImgOverlay className='d-flex flex-column justify-content-end card-overlay'>
                         <Card.Title>
@@ -170,7 +201,7 @@ function ThirdPage() {
                 </p>
                 <div className='d-flex justify-content-between bottom-footer'>
                     <div>{currentYear.getFullYear()}</div>
-                    <div>Codé avec <span role="img" aria-label="heart">❤️</span> par Alexandre Gvozdenovic</div>
+                    <div className='mr-3'>Codé avec <span role="img" aria-label="heart">❤️</span> par Alexandre Gvozdenovic</div>
                 </div>
  
             </Col>

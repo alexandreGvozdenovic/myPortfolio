@@ -11,8 +11,7 @@ function SecondPage() {
                 <Col xs={{span:10, offset:1}} md={{span: 5, offset:1}}>
                     <h2 id='about'>A propos</h2>
                     <p className='desc'> <strong>Lassé des tâches fonctionnelles, j'ai sauté la barrière technique pour devenir 
-                        développeur fullstack.</strong> <br/><br/> Après 10 semaines de coding bootcamp @La Capsule
-                        et une première expérience réussie avec InterFast je cherche actuellement de nouveaux challenges.
+                        développeur fullstack.</strong> <br/><br/> Après 1 an chez Cyclofix en tant que développeur front-end je suis près pour un nouveau challenge.
 
                     </p>
                 </Col>
@@ -26,7 +25,7 @@ function SecondPage() {
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
                 <i className="fas fa-laptop-code skill-icon"></i>
                 <h4 className='skill-title'>Front end</h4>
-                <p className='text-center skill'>HTML5, CSS3, JavaScript,<br/> React, Redux, React Native</p>
+                <p className='text-center skill'>HTML5, CSS3, JavaScript,<br/> React, Redux, React Native, Next</p>
             </Col>
             <Col xs={{span: 6}} md={{span:3}} className='d-flex flex-column align-items-center'>
                 <i className="fas fa-server skill-icon"></i>
